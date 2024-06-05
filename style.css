@@ -1,0 +1,8 @@
+img {
+    height: 3.5em;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
