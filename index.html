@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <script src="script.js"></script>
     <title>Document</title>
 </head>
 <body>
     <div class="container" onblur="javascript:generateRandomNumber">
         <div class="sidebar">
-            <div class="sidebar-option sidebar-title">
-                <img src="icons/view-dashboard.svg"/>
+            <div class="sidebar-title">
+                <img id="dashboard" src="icons/view-dashboard.svg"/>
                 <h1>Dashboard</h1>
             </div>
             <div class="sidebar-navigation">
@@ -60,17 +65,17 @@
                 <div class="search">
                     <div class="search-input">
                         <img src="icons/magnify.svg"/>
-                        <input type="text">
+                        <input class="search-box" type="text">
                     </div>
                     <div class="user-summary">
                         <img src="icons/bell-ring-outline.svg"/>
-                        <img src="https://xsgames.co/randomusers/avatar.php?g=male">
-                        <h1 id="random-name">John Doe</h1>
+                        <img class="profile-picture" src="https://xsgames.co/randomusers/avatar.php?g=male">
+                        <h1 id="summary-name">John Doe</h1>
                     </div>
                 </div>
                 <div class="action">
                     <div class="user-details">
-                        <img src="https://xsgames.co/randomusers/avatar.php?g=male">
+                        <img class="profile-picture" src="https://xsgames.co/randomusers/avatar.php?g=male">
                         <p>Hi there,</p>
                         <h1 id="user-details-name">John Doe (@JoeDoe)</h1>
                     </div>

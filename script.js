@@ -19,7 +19,7 @@ function generateRandomName() {
     const firstName = firstNames[randomIndex];
     const lastName = lastNames[randomIndex];
     const randomName = firstName + ' ' + lastName;
-    document.getElementById('random-name').textContent = randomName;
+    document.getElementById('summary-name').textContent = randomName;
     document.getElementById('user-details-name').textContent = randomName + ' (@' 
         + firstName.toLowerCase() + lastName.substring(0,1) + ')';
 }
