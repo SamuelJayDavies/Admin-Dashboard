@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container" onblur="javascript:generateRandomNumber">
         <div class="sidebar">
-            <div class="sidebar-title">
+            <div class="sidebar-option sidebar-title">
                 <img src="icons/view-dashboard.svg"/>
                 <h1>Dashboard</h1>
             </div>
@@ -64,11 +65,20 @@
                     <div class="user-summary">
                         <img src="icons/bell-ring-outline.svg"/>
                         <img src="https://xsgames.co/randomusers/avatar.php?g=male">
-                        <img 
+                        <h1 id="random-name">John Doe</h1>
                     </div>
                 </div>
                 <div class="action">
-
+                    <div class="user-details">
+                        <img src="https://xsgames.co/randomusers/avatar.php?g=male">
+                        <p>Hi there,</p>
+                        <h1 id="user-details-name">John Doe (@JoeDoe)</h1>
+                    </div>
+                    <div class="upload-options">
+                        <button>New</button>
+                        <button>Upload</button>
+                        <button>Share</button>
+                    </div>
                 </div>
             </div>
             <div class="main-content">

@@ -6,3 +6,24 @@ img {
     display: grid;
     grid-template-columns: 1fr 5fr;
 }
+
+.sidebar {
+    display: grid;
+}
+
+.sidebar-option, 
+.tab-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+
+.content-container {
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+}
+
+.header {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
