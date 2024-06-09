@@ -1,49 +1,43 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+/*
+  1. Use a more-intuitive box-sizing model.
 */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
 
 h1 {
     font-family: 'Raleway', 'sans-serif';
@@ -72,7 +66,6 @@ img {
 .sidebar {
     display: grid;
     grid-template-rows: 1fr 3fr 2fr 10fr;
-    height: auto;
 
 
     gap: 3.5em;
@@ -119,7 +112,7 @@ img {
 
 .content-container {
     display: grid;
-    grid-template-rows: 1fr 6fr;
+    grid-template-rows: 1fr 7fr;
 }
 
 .header {
@@ -183,7 +176,7 @@ img {
 
 .action {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
     align-items: center;
     height: 50%;
 }
@@ -193,6 +186,7 @@ img {
     grid-template-columns: 1fr 3fr;
     row-gap: 0em;
     align-items: center;
+    justify-self: baseline
 }
 
 .user-details .profile-picture {
@@ -218,7 +212,7 @@ img {
     border-style: none;
     color: white;
     height: 3em;
-    width: 6.5em;
+    width: 7em;
     margin: 0;
     font-family: 'Raleway', 'sans-serif';
     font-weight: bold;
@@ -228,9 +222,7 @@ img {
     display: grid;
     grid-template-columns: 4fr 1fr;
     gap: 2em;
-
-    height: 100vh;
-
+    
     background-color: rgb(226,232,240);
     
     padding: 1em;
@@ -242,8 +234,7 @@ img {
 
 .side-content {
     display: grid;
-    height: 45vh;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
     gap: 3em;
 }
 
@@ -270,6 +261,10 @@ img {
     font-family: 'Raleway', 'sans-serif';
 
     padding: 1em;
+}
+
+.card p {
+    color: grey;
 }
 
 .card:hover {
@@ -313,7 +308,7 @@ img {
     border-bottom-style: solid;
     border-bottom-color: rgba(128, 130, 133, 0.342);
 
-    padding: 1em;
+    padding: 2em;
 }
 
 #last-announcement {
