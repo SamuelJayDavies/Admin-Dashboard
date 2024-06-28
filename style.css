@@ -51,6 +51,8 @@ img {
 
 #dashboard {
     height: 3.5em;
+    transform: rotate(1turn);
+    transition: 1s ease-in-out;
 }
 
 #dashboard:hover {
